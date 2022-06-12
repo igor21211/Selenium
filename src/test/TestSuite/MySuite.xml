@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MyFirstSuite">
+    <listeners>
+        <listener class-name="First.MyProjectLestener"></listener>
+    </listeners>
+
+    <test name="exampleTest1">
+
+        <parameter name="username" value="tobi.netpeak@gmail.com"></parameter>
+        <parameter name="password" value="12345678"></parameter>
+        <classes>
+            <class name="First.OurFirstTest"></class>
+        </classes>
+    </test>
+    <test name="exampleTest2">
+        <classes>
+            <class name="First.OurSecondTest"></class>
+            <class name="First.MyFristTest"></class>
+            <class name="First.TestTwo"></class>
+        </classes>
+    </test>
+</suite>
