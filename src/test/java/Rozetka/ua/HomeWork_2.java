@@ -66,6 +66,7 @@ public class HomeWork_2 {
         String priceToAddProduct = priceoftheProductWasBye.getAttribute("innerText");
         String priceAddProduct = priceToAddProduct.substring(0,2)+(priceToAddProduct).substring(3);
 
+        // This code is getting the price of the product that was added to the basket.
         WebElement allorderOfTheBasket = driver.findElement(By.xpath("//div[@class = 'cart-receipt__sum-price']"));
         String orderOfTheBasket = allorderOfTheBasket.getAttribute("innerText");
 
