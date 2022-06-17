@@ -62,7 +62,7 @@ public class HomeWork_2 {
         basket.click();
 
         // This code is getting the price of the product that was added to the basket.
-        WebElement priceoftheProductWasBye = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//p[@class ='cart-product__price cart-product__price--red']")));
+        WebElement priceoftheProductWasBye = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//p[@class ='cart-product__price']")));
         String priceToAddProduct = priceoftheProductWasBye.getAttribute("innerText");
         String priceAddProduct = priceToAddProduct.substring(0,2)+(priceToAddProduct).substring(3);
 
