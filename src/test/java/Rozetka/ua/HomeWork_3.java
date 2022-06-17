@@ -52,7 +52,7 @@ public class HomeWork_3 {
         Assert.assertEquals(sizeOfPromotionBlock, 6);
 
         // A loop that iterates through the list of objects and checks the price of each object.
-        for (int i = 0; i <= sizeOfPromotionBlock; i++) {
+        for (int i = 1; i <= sizeOfPromotionBlock; i++) {
            // String priceFromBlock = priceFromBlockElement.get(i).getAttribute("textContent").trim().replace(" "," ");
             String priceFromBlock = driver.findElement(getPrice(i)).getAttribute("textContent").trim().replace(" "," ");
             driver.findElement(selectObject(i)).click();
